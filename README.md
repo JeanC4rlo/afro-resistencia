@@ -5,5 +5,4 @@ Esse é um projeto imersivo desenvolvido por alunos do CEFET-MG do curso de Info
 
 ⚠️ ***ATENÇÃO:*** Esse é um projeto que usa de imagens, vídeos e sons para causar impacto. Se sente ou sentir desconforto extremo com alguma coisa relacionada ao conteúdo, saia imediatamente e repouse brevemente.
 
-🌐 **Acesso:** [Afro Resistência](jeanc4rlo.githu
-b.io/afro-resistencia)
+🌐 **Acesso:** [Afro Resistência](jeanc4rlo.github.io/afro-resistencia)
