@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+html, body{
+    overflow: hidden;
+}
+body{
+    background-color: rgb(2, 7, 7);
+}
+
+section, #main-title{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+#main-title{
+    font-size: 35px;
+}
+header{
+    background-color: rgb(99, 15, 15);
+    padding: 15px 0px;
+    text-align: center;
+}
+section{
+    width: 100vw; height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+.avisos{
+    filter: drop-shadow(-2px 14px 10px #ffffff54);
+}
+.frase-Impactante{
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 60px;
+}
