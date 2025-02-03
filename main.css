@@ -1,43 +1,109 @@
-*{
+* {
     margin: 0;
 }
-html, body{
+
+html, body {
     overflow: hidden;
 }
-body{
+
+body {
     background-color: rgb(2, 7, 7);
 }
 
-section, #main-title{
+section, #main-title {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: white;
 }
-#main-title{
+
+#main-title {
     font-size: 35px;
 }
-header{
+
+header {
     background-color: rgb(99, 15, 15);
     padding: 15px 0px;
     text-align: center;
 }
-section{
-    width: 100vw; height: 100vh;
+
+section {
+    width: 90vw; height: calc(100vh - 4rem);
     display: none;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-size: 30px;
+    padding: 0 5vw;
 }
-.avisos{
-    filter: drop-shadow(-2px 14px 10px #ffffff54);
+
+.sombra {
+    filter: drop-shadow(-1px 2px 4px #ffffff54);
 }
-.frase-Impactante{
+
+.aviso-experiencia {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.aviso-experiencia div {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+    hyphens: auto;
+}
+
+.aviso-experiencia div img {
+    width: 5rem;
+}
+
+.aviso-autoplay {
+    gap: 2rem;
+    justify-content: center;
+}
+
+.frase-impactante {
     font-family: "League Spartan", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: bolder;
     font-size: 60px;
+}
+
+.video-vertical, .video-horizontal {
+    gap: 2rem;
+}
+
+.video-vertical video {
+    max-height: 80vh;
+    border: 4px solid white;
+}
+
+.video-horizontal {
+    flex-direction: column;
+}
+
+.video-horizontal video {
+    max-height: 45vh;
+    border: 4px solid white;
+}
+
+.imagem {
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.imagem img {
+    border: 4px solid white;
+}
+
+.autoria {
+    font-size: 14pt;
 }
