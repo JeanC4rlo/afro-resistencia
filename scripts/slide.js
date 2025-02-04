@@ -19,7 +19,7 @@ function passarSecao(i) {
     }
 
     if (i <= 1) pararMusica();
-    if (i >= 2 && audioEl.paused) tocarMusica();
+    if (i >= 2 && audioEl.paused) tocarMusica(indiceMusica);
 
     $secoes.stop(true, true).fadeOut(500);
     $($secoes[indiceSecao]).fadeIn(500).css("display", "flex");

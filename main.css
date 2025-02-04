@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    hyphens: auto;
 }
 
 html, body {
@@ -32,7 +33,7 @@ section {
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 130%;
+    font-size: 18pt;
     padding: 0 5vw;
 }
 
@@ -56,8 +57,6 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-
-    hyphens: auto;
 }
 
 .aviso-experiencia div img {
@@ -69,12 +68,53 @@ section {
     justify-content: center;
 }
 
-.frase-impactante {
-    font-family: "League Spartan", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 60px;
+.citacao {
+    position: relative;
+    flex-direction: column;
+    font-size: 20pt;
+}
+
+.citacao img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    opacity: 10%;
+    height: 98.75%;
+
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+}
+
+.vinheta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    margin: auto !important;
+
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 1) 80%);
+    z-index: 0 !important;
+
+    pointer-events: none; /* Permite interação com a imagem */
+  }
+
+.citacao p {
+    min-width: calc(100% - 30vw);
+    margin: 0 15vw;
+
+    z-index: 1;
+
+    text-align: justify;
+}
+
+.autor-citacao {
+    text-align: end !important;
+    font-weight: bold;
 }
 
 .video-vertical, .video-horizontal {
@@ -100,7 +140,7 @@ section {
     flex-direction: column;
 }
 
-.imagem img{
+.imagem img {
     border: 4px solid white;
 }
 
@@ -108,51 +148,86 @@ section {
     font-size: 14pt;
 }
 
-.destaques-texto{
+.destaques-texto {
     background-color: rgb(148, 13, 13);
     font-weight: bold;
     padding: 0px 8px;
 }
-.imagem{
-    display: flex;
-    flex-direction: row;
+
+.frase-impacto {
+    margin-top: 1rem;
 }
-.secao-titulos{
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.178));
+
+.imagem {
     display: flex;
     flex-direction: row;
 }
 
-.secao-titulos .texto-Imagem h2{
-    text-decoration: underline;
-}
-.texto-Imagem{
+.texto {
+    background-image: radial-gradient(circle farthest-corner at center, rgba(255, 255, 255, 0.080), rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0) 80%);
     display: flex;
     flex-direction: column;
 }
-.texto-Imagem p{
-    font-size: 80%;
+
+.texto, h2 {
+    margin-bottom: 1rem;
 }
-.colunas{
-    padding: 0px;
-    width: 100%; height: 90%;
+
+.texto-imagem {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+}
+
+.texto-imagem p {
+    font-size: 18pt;
+}
+
+.colunas {
+    width: calc(100% - 10vw); height: calc(100vh - 76px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
     align-items: stretch;
     gap: 10px;
-    margin: 30px 10px 0px 0px;
 }
-.bloco{
-    padding: 10px;
-    background-image: linear-gradient(rgb(155, 23, 23), rgb(109, 16, 16));
+
+.colunas h2 {
+    text-align: center;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.15em;
+}
+
+.blocos {
+    display: flex;
+    gap: 1rem;
+}
+
+.bloco {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    padding: 20px 30px 20px;
+    background-color: rgb(155, 23, 23);
     border-radius: 10px;
-    transition: all 100ms ease-in-out;
+    transition: padding 300ms ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.bloco:hover{
+
+.bloco:hover {
+    padding: 15px 50px 20px;
     color: rgb(109, 16, 16);
-    padding: 12px;
-    padding-bottom: 30px;
-    background-image: linear-gradient(#ffffff, rgb(207, 207, 207));
+    background-color: rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+.fim {
+    flex-direction: column;
+}
+
+.fim h1 {
+    font-size: 80pt;
 }
