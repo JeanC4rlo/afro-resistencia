@@ -32,7 +32,7 @@ section {
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 130%;
     padding: 0 5vw;
 }
 
@@ -100,10 +100,59 @@ section {
     flex-direction: column;
 }
 
-.imagem img {
+.imagem img{
     border: 4px solid white;
 }
 
 .autoria {
     font-size: 14pt;
+}
+
+.destaques-texto{
+    background-color: rgb(148, 13, 13);
+    font-weight: bold;
+    padding: 0px 8px;
+}
+.imagem{
+    display: flex;
+    flex-direction: row;
+}
+.secao-titulos{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.178));
+    display: flex;
+    flex-direction: row;
+}
+
+.secao-titulos .texto-Imagem h2{
+    text-decoration: underline;
+}
+.texto-Imagem{
+    display: flex;
+    flex-direction: column;
+}
+.texto-Imagem p{
+    font-size: 80%;
+}
+.colunas{
+    padding: 0px;
+    width: 100%; height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+    gap: 10px;
+    margin: 30px 10px 0px 0px;
+}
+.bloco{
+    padding: 10px;
+    background-image: linear-gradient(rgb(155, 23, 23), rgb(109, 16, 16));
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+}
+.bloco:hover{
+    color: rgb(109, 16, 16);
+    padding: 12px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(#ffffff, rgb(207, 207, 207));
 }
